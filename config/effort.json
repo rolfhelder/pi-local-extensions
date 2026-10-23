@@ -1,0 +1,9 @@
+{
+  "budgets": { "off": 0, "low": 512, "medium": 2048, "high": 4096 },
+  "models": {
+    "qwen": { "label": "Qwen3.5 9B", "nativeEffort": false, "off": true },
+    "gemma": { "label": "Gemma 4 12B", "nativeEffort": false, "off": true },
+    "omnicoder": { "label": "OmniCoder 9B", "nativeEffort": false, "off": true },
+    "gpt-oss": { "label": "GPT-OSS 20B", "nativeEffort": true, "off": false }
+  }
+}

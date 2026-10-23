@@ -1,0 +1,3 @@
+autoInstallPeers: false
+storeDir: .state/pnpm-store
+allowBuilds: {}

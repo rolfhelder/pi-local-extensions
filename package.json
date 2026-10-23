@@ -1,0 +1,32 @@
+{
+  "name": "@rolfhelder/pi-local-extensions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Portable Pi extensions for session telemetry, local reasoning controls, guardrails and desktop compatibility",
+  "license": "MIT",
+  "author": "rolfhelder",
+  "engines": { "node": ">=24.0.0" },
+  "packageManager": "pnpm@12.14.0",
+  "repository": { "type": "git", "url": "git+https://github.com/rolfhelder/pi-local-extensions.git" },
+  "files": ["extensions", "config", "scripts", "themes", "docs", "README.md", "LICENSE"],
+  "keywords": ["pi-package", "pi-extension", "local-ai", "telemetry"],
+  "pi": { "extensions": [
+    "./extensions/windows-destructive-policy.mjs",
+    "./extensions/bash-destructive-guard.ts",
+    "./extensions/context-status.mjs",
+    "./extensions/tool-budget.mjs",
+    "./extensions/effort.mjs",
+    "./extensions/session-telemetry.mjs"
+  ] },
+  "scripts": {
+    "test": "node --test evals/context-status.test.mjs evals/effort.test.mjs evals/local-token-budget.test.mjs evals/session-telemetry.test.mjs evals/policy.test.mjs evals/package.test.mjs",
+    "test:telemetry": "node evals/session-telemetry-integration.mjs",
+    "test:effort": "node evals/effort-runtime.mjs",
+    "test:package": "node evals/package-runtime.mjs",
+    "theme:build": "node scripts/build-theme.mjs"
+  },
+  "dependencies": { "pi-guard": "1.6.0", "pi-lsp-extension": "1.4.0" },
+  "peerDependencies": { "@earendil-works/pi-coding-agent": "1.3.0" },
+  "devDependencies": { "@earendil-works/pi-coding-agent": "1.3.0", "@earendil-works/pi-tui": "1.3.0", "typebox": "1.3.27" }
+}

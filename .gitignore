@@ -1,0 +1,17 @@
+node_modules/
+.state/
+.env
+.env.*
+auth.json
+*.log
+*.jsonl
+*.key
+*.pem
+runtime/
+models/
+*.gguf
+.pi/
+.pi-lsp.json
+evaluation/
+Thumbs.db
+.DS_Store

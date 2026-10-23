@@ -1,0 +1,17 @@
+{
+  "*": "allow",
+  "powershell": "allow",
+  "bash": {
+    "*": "allow",
+    "rm": "ask", "rmdir": "ask", "unlink": "ask", "shred": "ask",
+    "mkfs*": "ask", "dd": "ask", "wipefs": "ask",
+    "git reset --hard": "ask", "git clean": "ask", "git restore": "ask",
+    "git checkout --": "ask", "git branch -D": "ask", "git branch -d": "ask",
+    "git tag -d": "ask", "git stash drop": "ask", "git stash clear": "ask",
+    "git push --force*": "ask", "git push -f": "ask", "git rm": "ask",
+    "gh repo delete": "ask", "git worktree remove": "ask", "git commit --amend": "ask",
+    "git reset": "ask", "git rebase": "ask", "git branch --delete": "ask", "git tag --delete": "ask", "git push --delete": "ask"
+  },
+  "write": { "*": "allow", "**/.git/**": "ask" },
+  "edit": { "*": "allow", "**/.git/**": "ask" }
+}

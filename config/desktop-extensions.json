@@ -1,0 +1,34 @@
+{
+  "windows-destructive-policy": {
+    "name": "powershell-guard",
+    "description": "Asks before destructive PowerShell or Git actions; ordinary commands stay automatic."
+  },
+  "bash-destructive-guard": {
+    "name": "bash-and-file-guard",
+    "description": "Uses pi-guard to check Bash commands and file edits for risky operations."
+  },
+  "context-status": {
+    "name": "context-usage",
+    "description": "Shows estimated context usage in Pi CLI; Pi App uses its built-in Context panel."
+  },
+  "tool-budget": {
+    "name": "tool-budget",
+    "description": "Keeps the initial tool list small by disabling extra LSP and browser tools."
+  },
+  "effort": {
+    "name": "thinking-effort",
+    "description": "Adds /effort and maps thinking levels to real request budgets; --save persists a default."
+  },
+  "pi-app-compat": {
+    "name": "desktop-compatibility",
+    "description": "Bridges local-model metadata between Pi App 0.7.6 and Pi SDK 1.3.0."
+  },
+  "session-telemetry": {
+    "name": "session-telemetry",
+    "description": "Records response latency, tool durations and observed thinking time in the session JSONL."
+  },
+  "lsp-windows": {
+    "name": "lsp-windows",
+    "description": "Code diagnostics, definitions, hover, references and rename through language servers."
+  }
+}
