@@ -2,7 +2,7 @@
 
 **A portable collection of Pi extensions for local coding agents.** Session timing, real thinking-budget controls, practical guardrails and optional desktop helpers—kept separate from model downloads and machine configuration.
 
-Tested with **Pi SDK 1.3.0 · Node 24.22.1 · native Windows**. The repository is private. Original code is MIT; upstream dependencies retain their own licenses.
+Tested with **Pi SDK 1.3.0 · Node 24.22.1 · native Windows**. Original code is MIT; upstream dependencies retain their own licenses.
 
 ## Extensions
 
@@ -61,3 +61,7 @@ These checks use isolated Pi workers and scripted loopback providers. They do no
 Extracted from [local-agent-pi-llama-cpp-16gb](https://github.com/rolfhelder/local-agent-pi-llama-cpp-16gb). That repository still contains its working bundled copies and launchers. Do not enable both copies of the same extension in one Pi session: duplicate commands and hooks are undesirable. This library is the independent source snapshot for reuse; installing it does not silently rewire an existing setup.
 
 No model weights, runtimes, credentials, personal prompt templates, transcripts or original Git history are included.
+
+## Slop warning
+
+This repo was mostly done by AI agents. I'm sharing this because I think this may be useful for other people. Be warned this may contain slop and bad code I didn't review line by line. I tested this on my machine, made it work and put the end result into this repo.
